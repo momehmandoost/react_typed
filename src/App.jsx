@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import "./App.css";
 import Typed from "react-typed";
 import { Nav } from "./Componets/Nav";
+import logo2 from "../public/logo2.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,11 @@ function App() {
         <div className="text">
           <h1>Front-end Development</h1>
           <h2>Hi.I'M Mohammad Mehmandoost</h2>
+
+          <div className="image-container">
+            <div className="image-bg"></div>
+            <img src={logo2} width={250} alt="Vite" />
+          </div>
           <h3>
             Years of experience: <CountUp start={0} end={100} />
           </h3>
